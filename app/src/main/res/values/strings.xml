@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MadLibs</string>
+
+    <string name="haveIGotAGiraffeForYou">
+        Giraffes have aroused the curiosity of %1$s since earliest times. The giraffe is the tallest of all living %2$s, but scientists are unable to explain how it got its long %3$s. The giraffe\'s tremendous height, which might reach %1$d %4$s, comes mostly from its legs and %5$s. If a giraffe wants to take a drink of %6$s from the ground, it has to spread its %7$s far apart in order to reach down and lap up water with its huge %8$s. The giraffe has %9$s ears that are sensitive to the faintest %10$s, and it has a/an %11$s sense of small and sight. When attacked, a giraffe can put up a/an %12$s fight by %13$s out with its hind legs and using its head like a sledge %14$s. Finally, a giraffe can gallop at more than thirty %15$s an hour when pursued and can outrun the fastest %16$s.
+    </string>
+
 </resources>

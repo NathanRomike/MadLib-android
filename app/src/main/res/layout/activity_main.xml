@@ -1,98 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.guest.madlibs.MainActivity">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/mainName"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="2dp"
-        android:hint="Your Name" />
 
-    <RadioGroup
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@+id/mainName"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/prefPronoun">
-        <TextView
-            android:layout_gravity="top"
-            android:paddingBottom="0dp"
-            android:text="Preferred pronoun"
-            android:textSize="20sp"
-            android:textColor="@color/foreground_material_light"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="he"
-            android:layout_gravity="right"
-            android:id="@+id/pronounHe"
-            android:layout_margin="4dp" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="she"
-            android:id="@+id/pronounShe"
-            android:layout_margin="2dp" />
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="they"
-            android:id="@+id/pronounThey"
-            android:layout_margin="2dp" />
-    </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/adjectiveOne"
-        android:layout_below="@+id/prefPronoun"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/prefPronoun"
-        android:layout_alignEnd="@+id/prefPronoun"
-        android:hint="adjective" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giraffes!"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/nounOne"
-        android:layout_below="@+id/adjectiveOne"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="noun" />
+            <EditText
+                android:ems="10"
+                android:hint="plural noun"
+                android:id="@+id/pluralNounOne"
+                android:inputType="textPersonName"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:id="@+id/submitButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/mainName"
-        android:layout_alignEnd="@+id/mainName" />
+            <EditText
+                android:ems="10"
+                android:hint="plural noun"
+                android:id="@+id/pluralNounTwo"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:ems="10"
+                android:hint="part of the body"
+                android:id="@+id/partOfBodyOne"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:ems="10"
+                android:hint="number"
+                android:id="@+id/numberOne"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="plural noun"
+                android:id="@+id/pluralNounThree"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="part of the body"
+                android:id="@+id/partOfBodyTwo"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="type of liquid"
+                android:id="@+id/liquidOne"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="part of the body (plural)"
+                android:id="@+id/partOfBodyPluralOne"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="part of the body"
+                android:id="@+id/partOfBodyThree"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="adjective"
+                android:id="@+id/adjectiveOne"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="plural noun"
+                android:id="@+id/pluralNounFour"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="adjective"
+                android:id="@+id/adjectiveTwo"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="adjective"
+                android:id="@+id/adjectiveThree"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="verb ending in 'ing"
+                android:id="@+id/verbEndingInIngOne"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="noun"
+                android:id="@+id/nounOne"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="plural noun"
+                android:id="@+id/pluralNounFive"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:ems="10"
+                android:hint="noun"
+                android:id="@+id/nounTwo"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
-</RelativeLayout>
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Submit"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
